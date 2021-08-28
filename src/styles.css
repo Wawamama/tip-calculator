@@ -60,7 +60,7 @@ h1 {
   max-width: 98vw;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 440px) {
   .wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -144,6 +144,7 @@ button:active, .custom:active {
   background-color: #f4fafa;
   text-align: center;
   cursor: text;
+  color: #ccc;
 }
 
 .custom::-webkit-input-placeholder {
@@ -194,6 +195,22 @@ button:active, .custom:active {
   color: #7f9c9f;
 }
 
+.error {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  font-size: 0.6rem;
+  color: red;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.red-colored {
+  border: solid 1px red;
+}
+
 .bill {
   position: relative;
 }
@@ -221,6 +238,13 @@ button:active, .custom:active {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 440px) {
+  .right-container {
+    width: 100%;
+    gap: 1rem;
+  }
 }
 
 .tip-amount-cont {

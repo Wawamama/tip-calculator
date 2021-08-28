@@ -47,7 +47,7 @@ h1 {
     max-width: 98vw;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 440px) {
     .wrapper {
         flex-direction: row;
     }
@@ -113,6 +113,7 @@ button, .custom {
     }
     text-align: center;
     cursor: text;
+    color: #ccc;
 }
 
 
@@ -145,6 +146,22 @@ button, .custom {
     }
 }
 
+.error {
+    position: absolute;
+    top:4px;
+    right: 0;
+    font-size: 0.6rem;
+    color: red;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.red-colored {
+    border: solid 1px red;
+}
+
 .bill {
     position: relative;
     .bill-icon {
@@ -167,6 +184,14 @@ button, .custom {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+@media only screen and (max-width: 440px) {
+    .right-container {
+        width: 100%;
+        gap:1rem;
+    }
+}
+
 
 .tip-amount-cont {
     display: flex;
